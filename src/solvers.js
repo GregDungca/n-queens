@@ -34,7 +34,6 @@ window.findNRooksSolution = function(n) {
       //var string = JSON.stringify(board);
       for (var i = 0; i < positions.length; i++) {
         var b = new Board(board);
-        console.log('test');
         var temp = positions.slice();
         var r = row+1;
 
