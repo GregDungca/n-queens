@@ -31,9 +31,10 @@ window.findNRooksSolution = function(n) {
     // recursive case
     if (row < board.length) {
       if (positions.length === 0) return;
-      var string = JSON.stringify(board);
+      //var string = JSON.stringify(board);
       for (var i = 0; i < positions.length; i++) {
-        var b = new Board(JSON.parse(string));
+        var b = new Board(board);
+        console.log('test');
         var temp = positions.slice();
         var r = row+1;
 
